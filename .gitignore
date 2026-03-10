@@ -1,0 +1,12 @@
+Ignore Node Modules (Too heavy)
+
+node_modules/
+
+Ignore Secrets (CRITICAL)
+
+.env
+serviceAccountKey.json
+
+Ignore Logs
+
+npm-debug.log
