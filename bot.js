@@ -261,7 +261,7 @@ userBot.on('photo', async (ctx) => {
       }
     }
 
-    ctx.reply(data.lang === 'en' ? "✅ Sent for approval. Wait 6-24hrs." : "✅ ተልኳል። እባክዎ ከ6-24 ሰዓት ይጠብቁ።");
+    ctx.reply(data.lang === 'en' ? "✅ Sent for approval. Please wait 30 minutes to 1 hour." : "✅ ተልኳል። እባክዎ ከ6-24 ሰዓት ይጠብቁ።");
     ctx.session = null;
 
   } catch (error) {
