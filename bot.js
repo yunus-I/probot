@@ -277,7 +277,9 @@ adminBot.action(/approve_(.+)/, async (ctx) => {
     await db.collection('users').doc(phone).update({ approved: true });
     const doc = await db.collection('users').doc(phone).get();
     const userData = doc.data();
-    await userBot.telegram.sendMessage(userData.telegramId, "🎉 **APPROVED!**\n\nYou can now login to the App.", { parse_mode: 'Markdown' });
+    await userBot.telegram.sendMessage(userData.telegramId, "🎉 APPROVED!
+
+You can now login to the App using your phone number and password in @ExamStoreBot.", { parse_mode: 'Markdown' });
     const handlerName = ctx.from.first_name;
     for (const adminId of ADMIN_IDS) {
         try {
