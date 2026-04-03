@@ -197,8 +197,8 @@ userBot.on('text', (ctx) => {
     ctx.session.step = 'PAYMENT';
     
     const paymentMsg = ctx.session.lang === 'en'
-      ? `💸 **Payment Required: 200 ETB**\n\n🏦 CBE: 1000293836648 (Admassu Yano)\n📱 Telebirr: 0907667755 (Admassu Yano)\n\n📸 **Send screenshot of payment.**`
-      : `💸 **ክፍያ ያስፈልጋል: 200 ብር**\n\n🏦 ንግድ ባንክ: 1000293836648 (Admassu Yano)\n📱 ቴሌብር: 0907667755 (Admassu Yano)\n\n📸 **የከፈሉበትን ደረሰኝ ስክሪንሾት ይላኩ።**`;
+      ? `💸 **Payment Required: 190 ETB**\n\n🏦 CBE: 1000293836648 (Admassu Yano)\n📱 Telebirr: 0907667755 (Admassu Yano)\n\n📸 **Send screenshot of payment.**`
+      : `💸 **ክፍያ ያስፈልጋል: 190 ብር**\n\n🏦 ንግድ ባንክ: 1000293836648 (Admassu Yano)\n📱 ቴሌብር: 0907667755 (Admassu Yano)\n\n📸 **የከፈሉበትን ደረሰኝ ስክሪንሾት ይላኩ።**`;
     
     ctx.replyWithMarkdown(paymentMsg);
   }
